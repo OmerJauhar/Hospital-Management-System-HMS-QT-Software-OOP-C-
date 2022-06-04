@@ -2,12 +2,17 @@
 #include "ui_dialogpatient.h"
 #include<patient.h>
 #include "QMessageBox"
+#include "QPixmap"
 
 DialogPatient::DialogPatient(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DialogPatient)
 {
     ui->setupUi(this);
+//    this->showFullScreen();
+    QPixmap pix("C:/assets/medicine_qt.png");
+    ui->label_medicine->setPixmap(pix.scaled(650,400,Qt::KeepAspectRatio));
+
 }
 
 DialogPatient::~DialogPatient()
@@ -67,6 +72,24 @@ void DialogPatient::on_pushButton_4_clicked()
 
 
 void DialogPatient::on_DialogPatient_accepted()
+{
+
+}
+
+
+void DialogPatient::on_label_linkActivated(const QString &link)
+{
+
+}
+
+
+void DialogPatient::on_label_medicine_linkActivated(const QString &link)
+{
+
+}
+
+
+void DialogPatient::on_label_3_linkActivated(const QString &link)
 {
 
 }

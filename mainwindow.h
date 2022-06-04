@@ -28,6 +28,12 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_label_patient_linkActivated(const QString &link);
+
+    void on_plainTextEdit_blockCountChanged(int newBlockCount);
+
+    void on_frame_3_customContextMenuRequested(const QPoint &pos);
+
 private:
     Ui::MainWindow *ui;
 };

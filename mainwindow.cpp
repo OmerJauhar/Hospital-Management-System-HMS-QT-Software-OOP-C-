@@ -6,11 +6,18 @@
 #include "dialogbill.h"
 #include "dialogadmitted.h"
 #include "dialogappointment.h"
+#include "QPixmap"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+//    this->setWindowFlags(Qt::Window);
+//    this->showFullScreen();
+
+    QPixmap pix("C:/assets/pateint_qt.png");
+    ui->label_patient->setPixmap(pix.scaled(650,400,Qt::KeepAspectRatio));
 }
 
 MainWindow::~MainWindow()
@@ -72,5 +79,23 @@ void MainWindow::on_pushButton_4_clicked()
     Dialogappointment ap ;
     ap.setModal(true);
     ap.exec();
+}
+
+
+void MainWindow::on_label_patient_linkActivated(const QString &link)
+{
+
+}
+
+
+void MainWindow::on_plainTextEdit_blockCountChanged(int newBlockCount)
+{
+
+}
+
+
+void MainWindow::on_frame_3_customContextMenuRequested(const QPoint &pos)
+{
+
 }
 

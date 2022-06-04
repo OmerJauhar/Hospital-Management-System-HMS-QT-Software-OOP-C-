@@ -18,6 +18,10 @@ public:
 private slots:
     void on_pushButton_2_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_label_53_linkActivated(const QString &link);
+
 private:
     Ui::Dialogemployee *ui;
 };

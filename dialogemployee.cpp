@@ -9,6 +9,7 @@ Dialogemployee::Dialogemployee(QWidget *parent) :
     ui(new Ui::Dialogemployee)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 Dialogemployee::~Dialogemployee()
@@ -53,6 +54,18 @@ void Dialogemployee::on_pushButton_2_clicked()
 
         QMessageBox::warning(this,"Warning!","   Data Upload fail !  ");
     }
+
+}
+
+
+void Dialogemployee::on_pushButton_clicked()
+{
+    this->close();
+}
+
+
+void Dialogemployee::on_label_53_linkActivated(const QString &link)
+{
 
 }
 

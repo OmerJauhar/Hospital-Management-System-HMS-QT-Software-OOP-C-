@@ -22,6 +22,12 @@ private slots:
 
     void on_DialogPatient_accepted();
 
+    void on_label_linkActivated(const QString &link);
+
+    void on_label_medicine_linkActivated(const QString &link);
+
+    void on_label_3_linkActivated(const QString &link);
+
 private:
     Ui::DialogPatient *ui;
 };
