@@ -94,3 +94,9 @@ void DialogPatient::on_label_3_linkActivated(const QString &link)
 
 }
 
+
+void DialogPatient::on_frame_customContextMenuRequested(const QPoint &pos)
+{
+
+}
+

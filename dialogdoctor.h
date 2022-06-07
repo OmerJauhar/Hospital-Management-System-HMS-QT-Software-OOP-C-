@@ -21,6 +21,8 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_doctor_label_linkActivated(const QString &link);
+
 private:
     Ui::DialogDoctor *ui;
 };

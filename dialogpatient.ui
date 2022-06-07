@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1527</width>
-    <height>878</height>
+    <width>1562</width>
+    <height>909</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -398,7 +398,7 @@ QSlider::sub-page:vertical {
     background: #04b97f;
 }</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -778,7 +778,7 @@ color:rgb(255, 255, 255);
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>710</x>

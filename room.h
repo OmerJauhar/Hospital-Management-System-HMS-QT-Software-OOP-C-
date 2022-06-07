@@ -9,7 +9,6 @@ protected:
     int balance ;
     int reversedays ;
     int floor ;
-    int
 
 public:
     room();

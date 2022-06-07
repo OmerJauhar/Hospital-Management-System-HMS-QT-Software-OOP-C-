@@ -11,6 +11,8 @@ DialogDoctor::DialogDoctor(QWidget *parent) :
     ui(new Ui::DialogDoctor)
 {
     ui->setupUi(this);
+    QPixmap pix("C:/assets/doctor.png");
+    ui->doctor_label->setPixmap(pix.scaled(650,400,Qt::KeepAspectRatio));
 }
 
 DialogDoctor::~DialogDoctor()
@@ -109,5 +111,11 @@ void DialogDoctor::on_pushButton_2_clicked()
     meow2 <<text2 ;
     meow2<<"\n";
     file2.close();
+}
+
+
+void DialogDoctor::on_doctor_label_linkActivated(const QString &link)
+{
+
 }
 

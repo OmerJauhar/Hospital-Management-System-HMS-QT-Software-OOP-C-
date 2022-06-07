@@ -13,9 +13,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-//    this->setWindowFlags(Qt::Window);
-//    this->showFullScreen();
-
     QPixmap pix("C:/assets/pateint_qt.png");
     ui->label_patient->setPixmap(pix.scaled(650,400,Qt::KeepAspectRatio));
 }
@@ -95,6 +92,12 @@ void MainWindow::on_plainTextEdit_blockCountChanged(int newBlockCount)
 
 
 void MainWindow::on_frame_3_customContextMenuRequested(const QPoint &pos)
+{
+
+}
+
+
+void MainWindow::on_frame_5_customContextMenuRequested(const QPoint &pos)
 {
 
 }
