@@ -1,6 +1,6 @@
 #include "dialogemployee.h"
 #include "ui_dialogemployee.h"
-#include "emlpoyee.h".h"
+#include "emlpoyee.h"
 #include "qmessagebox.h"
 
 
@@ -9,7 +9,8 @@ Dialogemployee::Dialogemployee(QWidget *parent) :
     ui(new Ui::Dialogemployee)
 {
     ui->setupUi(this);
-    this->showFullScreen();
+    QPixmap pix("C:/assets/employees.png");
+    ui->label->setPixmap(pix.scaled(460,350,Qt::KeepAspectRatio));
 }
 
 Dialogemployee::~Dialogemployee()
@@ -65,6 +66,18 @@ void Dialogemployee::on_pushButton_clicked()
 
 
 void Dialogemployee::on_label_53_linkActivated(const QString &link)
+{
+
+}
+
+
+void Dialogemployee::on_Dialogemployee_accepted()
+{
+
+}
+
+
+void Dialogemployee::on_label_2_linkActivated(const QString &link)
 {
 
 }

@@ -119,3 +119,9 @@ void DialogDoctor::on_doctor_label_linkActivated(const QString &link)
 
 }
 
+
+void DialogDoctor::on_DialogDoctor_accepted()
+{
+
+}
+

@@ -13,39 +13,50 @@ SOURCES += \
     admitted.cpp \
     credentials.cpp \
     databasehandler.cpp \
+    dialog.cpp \
     dialogadmitted.cpp \
     dialogappointment.cpp \
-    dialogbill.cpp \
+    dialogbill1.cpp \
     dialogdoctor.cpp \
     dialogemployee.cpp \
     dialogpatient.cpp \
     doctor.cpp \
     emlpoyee.cpp \
+    hospital.cpp \
+    icu.cpp \
     main.cpp \
     mainwindow.cpp \
     patient.cpp \
+    room.cpp \
+    shared.cpp \
     single.cpp
 
 HEADERS += \
     admitted.h \
     credentials.h \
     databasehandler.h \
+    dialog.h \
     dialogadmitted.h \
     dialogappointment.h \
-    dialogbill.h \
+    dialogbill1.h \
     dialogdoctor.h \
     dialogemployee.h \
     dialogpatient.h \
     doctor.h \
     emlpoyee.h \
+    hospital.h \
+    icu.h \
     mainwindow.h \
     patient.h \
+    room.h \
+    shared.h \
     single.h
 
 FORMS += \
+    dialog.ui \
     dialogadmitted.ui \
     dialogappointment.ui \
-    dialogbill.ui \
+    dialogbill1.ui \
     dialogdoctor.ui \
     dialogemployee.ui \
     dialogpatient.ui \

@@ -1,17 +1,20 @@
 #ifndef SINGLE_H
 #define SINGLE_H
+#include "room.h"
+#include "hospital.h"
 
-#include<admitted.h>
-#include<string>
 
-
-class single : public admitted
+class single :public room
 {
-protected:
-   std::string room_type = "Single";
+protected :
+    double room_Cost ;
+    std::string room_type ;
+    hospital a ;
+
 public:
     single();
-    single(int a , int b , int c , std::string d);
+    void set_single(std::string a , int b , int c, int d , int e  , int g , int h ) ;
+    void upload_Data() override ;
 };
 
 #endif // SINGLE_H

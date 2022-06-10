@@ -8,6 +8,10 @@ Dialogappointment::Dialogappointment(QWidget *parent) :
     ui(new Ui::Dialogappointment)
 {
     ui->setupUi(this);
+    QPixmap pix("C:/assets/appointment.png");
+    ui->label_2->setPixmap(pix.scaled(700,300,Qt::KeepAspectRatio));
+
+
     QFile file("C:/Users/User/Desktop/hms - Copy/Doctor.txt");
     if (!file.open(QFile::ReadOnly | QFile::Text ))
     {
@@ -120,5 +124,17 @@ void Dialogappointment::on_pushButton_8_clicked()
             QMessageBox::information(this,"Appointment time:",time);
         }
     }
+}
+
+
+void Dialogappointment::on_label_2_linkActivated(const QString &link)
+{
+
+}
+
+
+void Dialogappointment::on_Dialogappointment_accepted()
+{
+
 }
 

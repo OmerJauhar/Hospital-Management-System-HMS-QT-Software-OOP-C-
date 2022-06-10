@@ -1,15 +1,15 @@
-#include "single.h"
+#include "shared.h"
 #include <QJsonDocument>
 #include <QVariantMap>
 #include <QDebug>
 
-single::single()
+shared::shared()
 {
-    this->room_type = "Single Room" ;
+    this->room_type = "Shared room" ;
     this->room_Cost = a.get_single_room_cost();
 }
 
-void single::set_single(std::string a, int b, int c, int d, int e, int g, int h)
+void shared::set_shared(std::string a, int b, int c, int d, int e, int g, int h)
 {
     this->name = a ;
     this->age =  b ;
@@ -20,10 +20,7 @@ void single::set_single(std::string a, int b, int c, int d, int e, int g, int h)
     this->room_number = h ;
 }
 
-
-
-
-void single::upload_Data()
+void shared::upload_Data()
 {
     m_networkManager = new QNetworkAccessManager(this ) ;
     QVariantMap newroom ;

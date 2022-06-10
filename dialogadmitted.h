@@ -15,6 +15,11 @@ public:
     explicit Dialogadmitted(QWidget *parent = nullptr);
     ~Dialogadmitted();
 
+private slots:
+    void on_Dialogadmitted_accepted();
+
+    void on_pushButton_6_clicked();
+
 private:
     Ui::Dialogadmitted *ui;
 };

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialogadmitted</class>
- <widget class="QDialog" name="Dialogadmitted">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1466</width>
-    <height>829</height>
+    <width>840</width>
+    <height>664</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -401,91 +401,38 @@ QSlider::sub-page:vertical {
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>51</x>
-     <y>11</y>
-     <width>1091</width>
-     <height>191</height>
+     <x>170</x>
+     <y>10</y>
+     <width>541</width>
+     <height>121</height>
     </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>1091</width>
-     <height>191</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>1091</width>
-     <height>191</height>
-    </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 30pt &quot;Modern No. 20&quot;;</string>
+    <string notr="true">font: 35pt &quot;Modern No. 20&quot;;</string>
    </property>
    <property name="text">
-    <string>Reserve Room</string>
-   </property>
-  </widget>
-  <widget class="QFrame" name="frame_2">
-   <property name="geometry">
-    <rect>
-     <x>558</x>
-     <y>208</y>
-     <width>101</width>
-     <height>558</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>101</width>
-     <height>541</height>
-    </size>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>51</x>
-     <y>208</y>
-     <width>501</width>
-     <height>558</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>501</width>
-     <height>558</height>
-    </size>
-   </property>
-   <property name="text">
-    <string/>
+    <string>Update Hospital Data</string>
    </property>
   </widget>
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>666</x>
-     <y>209</y>
-     <width>634</width>
-     <height>549</height>
+     <x>90</x>
+     <y>120</y>
+     <width>642</width>
+     <height>491</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
         <item>
-         <widget class="QLabel" name="label_11">
+         <widget class="QLabel" name="label_5">
           <property name="minimumSize">
            <size>
-            <width>111</width>
+            <width>231</width>
             <height>51</height>
            </size>
           </property>
@@ -493,7 +440,7 @@ QSlider::sub-page:vertical {
            <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
           </property>
           <property name="text">
-           <string>Name                  </string>
+           <string>Hospital Name </string>
           </property>
          </widget>
         </item>
@@ -519,12 +466,12 @@ QSlider::sub-page:vertical {
        </layout>
       </item>
       <item row="1" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
-         <widget class="QLabel" name="label_4">
+         <widget class="QLabel" name="label_2">
           <property name="minimumSize">
            <size>
-            <width>111</width>
+            <width>231</width>
             <height>51</height>
            </size>
           </property>
@@ -532,12 +479,12 @@ QSlider::sub-page:vertical {
            <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
           </property>
           <property name="text">
-           <string>Age                     </string>
+           <string>Hospital Location </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="line_age">
+         <widget class="QLineEdit" name="line_location">
           <property name="minimumSize">
            <size>
             <width>377</width>
@@ -558,12 +505,12 @@ QSlider::sub-page:vertical {
        </layout>
       </item>
       <item row="2" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
         <item>
-         <widget class="QLabel" name="label_12">
+         <widget class="QLabel" name="label_6">
           <property name="minimumSize">
            <size>
-            <width>111</width>
+            <width>231</width>
             <height>51</height>
            </size>
           </property>
@@ -571,12 +518,12 @@ QSlider::sub-page:vertical {
            <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
           </property>
           <property name="text">
-           <string>Phone Number    </string>
+           <string>Hospital Type</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="line_phone">
+         <widget class="QLineEdit" name="line_type">
           <property name="minimumSize">
            <size>
             <width>375</width>
@@ -597,12 +544,12 @@ QSlider::sub-page:vertical {
        </layout>
       </item>
       <item row="3" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QLabel" name="label_13">
+         <widget class="QLabel" name="label_8">
           <property name="minimumSize">
            <size>
-            <width>111</width>
+            <width>231</width>
             <height>51</height>
            </size>
           </property>
@@ -610,15 +557,15 @@ QSlider::sub-page:vertical {
            <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
           </property>
           <property name="text">
-           <string>CNIC                  </string>
+           <string>Bed Capacity </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="line_cnic">
+         <widget class="QLineEdit" name="line_bed">
           <property name="minimumSize">
            <size>
-            <width>375</width>
+            <width>377</width>
             <height>41</height>
            </size>
           </property>
@@ -636,12 +583,12 @@ QSlider::sub-page:vertical {
        </layout>
       </item>
       <item row="4" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
-         <widget class="QLabel" name="label_18">
+         <widget class="QLabel" name="label_4">
           <property name="minimumSize">
            <size>
-            <width>111</width>
+            <width>231</width>
             <height>51</height>
            </size>
           </property>
@@ -649,12 +596,12 @@ QSlider::sub-page:vertical {
            <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
           </property>
           <property name="text">
-           <string>Number of Days  </string>
+           <string>single room cost </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="line_nods">
+         <widget class="QLineEdit" name="line_single">
           <property name="minimumSize">
            <size>
             <width>377</width>
@@ -675,66 +622,12 @@ QSlider::sub-page:vertical {
        </layout>
       </item>
       <item row="5" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <item>
-         <widget class="QLabel" name="label_17">
-          <property name="minimumSize">
-           <size>
-            <width>111</width>
-            <height>51</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
-          </property>
-          <property name="text">
-           <string>Type of Room      </string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="comboBox">
-          <property name="minimumSize">
-           <size>
-            <width>381</width>
-            <height>41</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>14</pointsize>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color:rgb(255, 255, 255)</string>
-          </property>
-          <item>
-           <property name="text">
-            <string>Single Room </string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Shared Room </string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Imtensive Care Unit (ICU)</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item row="6" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QLabel" name="label_14">
+         <widget class="QLabel" name="label_7">
           <property name="minimumSize">
            <size>
-            <width>111</width>
+            <width>231</width>
             <height>51</height>
            </size>
           </property>
@@ -742,12 +635,12 @@ QSlider::sub-page:vertical {
            <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
           </property>
           <property name="text">
-           <string>Floor                  </string>
+           <string>Shared Room Cost </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="line_floor">
+         <widget class="QLineEdit" name="line_shared">
           <property name="minimumSize">
            <size>
             <width>375</width>
@@ -767,26 +660,26 @@ QSlider::sub-page:vertical {
         </item>
        </layout>
       </item>
-      <item row="7" column="0">
+      <item row="6" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QLabel" name="label_16">
+         <widget class="QLabel" name="label_9">
           <property name="minimumSize">
            <size>
-            <width>111</width>
-            <height>51</height>
+            <width>231</width>
+            <height>52</height>
            </size>
           </property>
           <property name="styleSheet">
            <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
           </property>
           <property name="text">
-           <string>Room                  </string>
+           <string>ICU cost </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="line_room">
+         <widget class="QLineEdit" name="line_icu">
           <property name="minimumSize">
            <size>
             <width>375</width>
@@ -809,9 +702,9 @@ QSlider::sub-page:vertical {
      </layout>
     </item>
     <item row="1" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
       <item>
-       <widget class="QPushButton" name="pushButton_5">
+       <widget class="QPushButton" name="pushButton_2">
         <property name="minimumSize">
          <size>
           <width>301</width>
@@ -820,9 +713,57 @@ QSlider::sub-page:vertical {
         </property>
         <property name="font">
          <font>
-          <pointsize>14</pointsize>
+          <family>Yu Gothic UI</family>
+          <pointsize>12</pointsize>
+          <italic>false</italic>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton{
+	border-style: solid;
+	border-color: #050a0e;
+	border-width: 1px;
+	border-radius: 5px;
+	color: #d3dae3;
+	padding: 2px;
+	background-color: #100E19;
+    font: 700 12pt &quot;Yu Gothic UI&quot;;
+}
+QPushButton::default{
+	border-style: solid;
+	border-color: #050a0e;
+	border-width: 1px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	padding: 2px;
+	background-color: #151a1e;
+font: 700 16pt &quot;Yu Gothic UI&quot;;
+}
+QPushButton:hover{
+	border-style: solid;
+	border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 #C0DB50, stop:0.4 #C0DB50, stop:0.5 #100E19, stop:1 #100E19);
+    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 #100E19, stop:0.5 #100E19, stop:0.6 #C0DB50, stop:1 #C0DB50);
+    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #C0DB50, stop:0.3 #C0DB50, stop:0.7 #100E19, stop:1 #100E19);
+    border-right-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #C0DB50, stop:0.3 #C0DB50, stop:0.7 #100E19, stop:1 #100E19);
+	border-width: 2px;
+    border-radius: 1px;
+	color: #d3dae3;
+	padding: 2px;
+}
+QPushButton:pressed{
+	border-style: solid;
+	border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 #d33af1, stop:0.4 #d33af1, stop:0.5 #100E19, stop:1 #100E19);
+    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 #100E19, stop:0.5 #100E19, stop:0.6 #d33af1, stop:1 #d33af1);
+    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #d33af1, stop:0.3 #d33af1, stop:0.7 #100E19, stop:1 #100E19);
+    border-right-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #d33af1, stop:0.3 #d33af1, stop:0.7 #100E19, stop:1 #100E19);
+	border-width: 2px;
+    border-radius: 1px;
+	color: #d3dae3;
+	padding: 2px;
+}
+</string>
         </property>
         <property name="text">
          <string>Cancel </string>
@@ -830,7 +771,7 @@ QSlider::sub-page:vertical {
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="pushButton">
         <property name="minimumSize">
          <size>
           <width>311</width>
@@ -839,9 +780,57 @@ QSlider::sub-page:vertical {
         </property>
         <property name="font">
          <font>
-          <pointsize>14</pointsize>
+          <family>Yu Gothic UI</family>
+          <pointsize>16</pointsize>
+          <italic>false</italic>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton{
+	border-style: solid;
+	border-color: #050a0e;
+	border-width: 1px;
+	border-radius: 5px;
+	color: #d3dae3;
+	padding: 2px;
+	background-color: #100E19;
+    font: 700 16pt &quot;Yu Gothic UI&quot;;
+}
+QPushButton::default{
+	border-style: solid;
+	border-color: #050a0e;
+	border-width: 1px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	padding: 2px;
+	background-color: #151a1e;
+font: 700 16pt &quot;Yu Gothic UI&quot;;
+}
+QPushButton:hover{
+	border-style: solid;
+	border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 #C0DB50, stop:0.4 #C0DB50, stop:0.5 #100E19, stop:1 #100E19);
+    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 #100E19, stop:0.5 #100E19, stop:0.6 #C0DB50, stop:1 #C0DB50);
+    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #C0DB50, stop:0.3 #C0DB50, stop:0.7 #100E19, stop:1 #100E19);
+    border-right-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #C0DB50, stop:0.3 #C0DB50, stop:0.7 #100E19, stop:1 #100E19);
+	border-width: 2px;
+    border-radius: 1px;
+	color: #d3dae3;
+	padding: 2px;
+}
+QPushButton:pressed{
+	border-style: solid;
+	border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 #d33af1, stop:0.4 #d33af1, stop:0.5 #100E19, stop:1 #100E19);
+    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 #100E19, stop:0.5 #100E19, stop:0.6 #d33af1, stop:1 #d33af1);
+    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #d33af1, stop:0.3 #d33af1, stop:0.7 #100E19, stop:1 #100E19);
+    border-right-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #d33af1, stop:0.3 #d33af1, stop:0.7 #100E19, stop:1 #100E19);
+	border-width: 2px;
+    border-radius: 1px;
+	color: #d3dae3;
+	padding: 2px;
+}
+</string>
         </property>
         <property name="text">
          <string>SUBMIT </string>

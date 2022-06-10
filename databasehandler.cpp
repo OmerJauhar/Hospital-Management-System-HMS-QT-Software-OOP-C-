@@ -57,6 +57,50 @@ databasehandler::databasehandler(std::string a, std::string b, int c, int d, int
     newdoctorrequest.setHeader(QNetworkRequest::ContentTypeHeader,QString("application.json"));
     m_networkManager->post(newdoctorrequest,jsondoc.toJson());
 }
+databasehandler::databasehandler(std::string a , double b , double c ,double e, std::string d)
+{
+    m_networkManager = new QNetworkAccessManager(this ) ;
+    std::string meow ;
+    std::string  meow2 ;
+    meow = "https://hospitalmanagementsystem-597da-default-rtdb.firebaseio.com/patient/";
+    std::string meow1 = a + ".json" ;
+    meow2 = meow + meow1 ;
+    QVariantMap newbill ;
+//    newbill ["Name: "] = QString::fromStdString(a) ;
+//    newbill ["Gender: "] = QString::fromStdString(b);
+//    newbill ["Age: "] =  c ;
+//    newbill ["Phone: "] = d ;
+//    newbill ["CNIC: "] = e ;
+//    newbill ["Specilization: "] = QString::fromStdString(f) ;
+//    newbill ["Start time: "] = g ;
+//    newbill ["End time: "] = h ;
+    QJsonDocument jsondoc  = QJsonDocument::fromVariant(newbill) ;
+
+    QNetworkRequest newbillrequest( QUrl(QString ::fromStdString(meow)) );
+
+    newbillrequest.setHeader(QNetworkRequest::ContentTypeHeader,QString("application.json"));
+    m_networkManager->post(newbillrequest,jsondoc.toJson());
+}
+
+databasehandler::databasehandler(QString a, QString b, QString c, QString d, QString e)
+{
+    QString meow = "https://hospitalmanagementsystem-597da-default-rtdb.firebaseio.com/patient/" ;
+    QString meow1 = a + "/.json" ;
+    QString meow2 = meow + meow1 ;
+
+    m_networkManager = new QNetworkAccessManager(this ) ;
+    QVariantMap newbill ;
+    newbill ["Name: "] = b ;
+    newbill ["Arrears: "] = c ;
+    newbill ["Paid: "] = d ;
+    newbill ["Refernce Doctor: "] = e ;
+
+    QJsonDocument jsondoc2  = QJsonDocument::fromVariant(newbill) ;
+    QNetworkRequest newpatientrequest( (QUrl(meow2)) );
+
+    newpatientrequest.setHeader(QNetworkRequest::ContentTypeHeader,QString("application.json"));
+    m_networkManager->put(newpatientrequest,jsondoc2.toJson());
+}
 
 
 

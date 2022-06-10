@@ -22,6 +22,10 @@ private slots:
 
     void on_label_53_linkActivated(const QString &link);
 
+    void on_Dialogemployee_accepted();
+
+    void on_label_2_linkActivated(const QString &link);
+
 private:
     Ui::Dialogemployee *ui;
 };

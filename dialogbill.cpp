@@ -8,6 +8,7 @@ Dialogbill::Dialogbill(QWidget *parent) :
     ui(new Ui::Dialogbill)
 {
     ui->setupUi(this);
+
 }
 
 Dialogbill::~Dialogbill()
@@ -47,5 +48,12 @@ void Dialogbill::on_pushButton_clicked()
     {
         QMessageBox::warning(this,"Warning!","Data has not been uploaded.");
     }
+}
+
+
+void Dialogbill::on_label_linkActivated(const QString &link)
+{
+
+
 }
 

@@ -3,10 +3,11 @@
 #include "dialogdoctor.h"
 #include "dialogpatient.h"
 #include "dialogemployee.h"
-#include "dialogbill.h"
+#include "dialogbill1.h"
 #include "dialogadmitted.h"
 #include "dialogappointment.h"
 #include "QPixmap"
+#include "dialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -56,7 +57,7 @@ void MainWindow::on_pushButton_7_clicked()
 void MainWindow::on_pushButton_8_clicked()
 {
 //    hide();
-    Dialogbill b1 ;
+    Dialogbill1 b1 ;
     b1.setModal(true) ;
     b1.exec();
 
@@ -100,5 +101,13 @@ void MainWindow::on_frame_3_customContextMenuRequested(const QPoint &pos)
 void MainWindow::on_frame_5_customContextMenuRequested(const QPoint &pos)
 {
 
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    Dialog d1 ;
+    d1.setModal(true) ;
+    d1.exec() ;
 }
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1425</width>
-    <height>737</height>
+    <width>1474</width>
+    <height>774</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1085,13 +1085,29 @@ QPushButton:pressed{
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>700</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color : rgb(80, 81, 82); </string>
+    </property>
+    <property name="text">
+     <string>Hospital data</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1425</width>
+     <width>1474</width>
      <height>18</height>
     </rect>
    </property>

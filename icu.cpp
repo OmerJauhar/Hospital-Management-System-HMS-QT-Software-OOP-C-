@@ -1,15 +1,14 @@
-#include "single.h"
+#include "icu.h"
 #include <QJsonDocument>
 #include <QVariantMap>
 #include <QDebug>
-
-single::single()
+icu::icu()
 {
     this->room_type = "Single Room" ;
     this->room_Cost = a.get_single_room_cost();
 }
 
-void single::set_single(std::string a, int b, int c, int d, int e, int g, int h)
+void icu::set_icu(std::string a, int b, int c, int d, int e, int g, int h)
 {
     this->name = a ;
     this->age =  b ;
@@ -20,10 +19,7 @@ void single::set_single(std::string a, int b, int c, int d, int e, int g, int h)
     this->room_number = h ;
 }
 
-
-
-
-void single::upload_Data()
+void icu::upload_Data()
 {
     m_networkManager = new QNetworkAccessManager(this ) ;
     QVariantMap newroom ;
@@ -46,3 +42,6 @@ void single::upload_Data()
     newroomrequest.setHeader(QNetworkRequest::ContentTypeHeader,QString("application.json"));
     m_networkManager->post(newroomrequest,jsondoc3.toJson());
 }
+
+
+

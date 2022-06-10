@@ -17,12 +17,12 @@ protected:
 
     std::string medical_problem ;
 
-    float bill ;
-    float arrears ;
+    double bill ;
+    double arrears ;
 
     bool bill_status ;
 
-    float total_amount ;
+    double  total_amount ;
 
     std::string reference_doctor ;
 
@@ -35,17 +35,17 @@ public:
 
     void set_medical_probelm(std::string a);
 
-    patient(std::string a , std::string b , int c , int d , std::string e , float f , float g , bool i);
+    patient(std::string a , std::string b , int c , int d , std::string e , double f , double g , bool i);
 
     void upload_data();
 
     void upload_bill(std::string a);
 
-    void set_total_amount(float a);
+    void set_total_amount(double a);
 
-    void set_arrears(float a) ;
+    void set_arrears(double a) ;
 
-    void set_bill(float a);
+    void set_bill(double a);
 
     void set_refernce_doctor(std::string a );
 

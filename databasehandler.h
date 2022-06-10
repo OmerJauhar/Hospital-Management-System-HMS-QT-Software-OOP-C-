@@ -14,6 +14,9 @@ public:
     void upload_patient(std::string a , std::string b , int c, int d , int e, std::string f );
     databasehandler(std::string a , std::string b , int c, int d , int e, std::string f );
     databasehandler(std::string a , std::string b , int c , int d ,  int e  , std::string  f , int g , int h );
+    databasehandler(std::string a , double b , double c ,double e ,std::string d) ;
+    databasehandler(QString a , QString b , QString c , QString d , QString e) ;
+
     ~databasehandler();
 
 public slots:

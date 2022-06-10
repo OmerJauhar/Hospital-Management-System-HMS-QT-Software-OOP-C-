@@ -20,14 +20,24 @@ void patient::set_medical_probelm(std::string a)
     this->medical_problem = a ;
 }
 
-patient::patient(std::string a , std::string b , int c, int d , std::string e , float f , float g , bool h )
+//patient::patient(std::string a , std::string b , int c, int d , std::string e , double f , double g , bool h )
+//{
+//    credentials(a,b,c,d);
+
+//    this->medical_problem = e ;
+//    this->bill = f ;
+//    this->arrears = g ;
+//    this->bill_status = h;
+//}
+
+patient::patient(std::string a , std::string b , int c , int d , std::string e , double f , double g , bool i)
 {
     credentials(a,b,c,d);
 
     this->medical_problem = e ;
     this->bill = f ;
     this->arrears = g ;
-    this->bill_status = h;
+    this->bill_status = i;
 }
 
 void patient::upload_data()
@@ -58,6 +68,7 @@ void patient::upload_bill(std::string a)
     QVariantMap newpatient ;
 //    QString meow = QString::fromStdString(a);
     std::string connstring = "https://hospitalmanagementsystem-597da-default-rtdb.firebaseio.com/patient/" + a +".json";
+    newpatient ["Name: "] = QString::fromStdString(this->name);
     newpatient ["Arrears: "] = QString::fromStdString(std::to_string(this->arrears));
     newpatient ["Bill Paid: "] = QString::fromStdString(std::to_string(this->bill));
     newpatient ["Total Amount: "] =QString::fromStdString(std::to_string(this->total_amount));
@@ -71,17 +82,17 @@ void patient::upload_bill(std::string a)
     m_networkManager->put(newpatientrequest,jsondoc2.toJson());
 }
 
-void patient::set_total_amount(float a)
+void patient::set_total_amount(double a)
 {
     this->total_amount = a ;
 }
 
-void patient::set_arrears(float a)
+void patient::set_arrears(double a)
 {
     this->arrears = a ;
 }
 
-void patient::set_bill(float a)
+void patient::set_bill(double a)
 {
     this->bill = a ;
 }

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1562</width>
-    <height>909</height>
+    <width>1344</width>
+    <height>689</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -398,439 +398,328 @@ QSlider::sub-page:vertical {
     background: #04b97f;
 }</string>
   </property>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>-20</y>
-     <width>1365</width>
-     <height>1741</height>
+     <x>30</x>
+     <y>61</y>
+     <width>1289</width>
+     <height>530</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_4">
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout">
-              <item>
-               <widget class="QLabel" name="label_4">
-                <property name="minimumSize">
-                 <size>
-                  <width>261</width>
-                  <height>271</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:rgb(76, 77, 78) ; 
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>1281</width>
+        <height>111</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 30pt &quot;Modern No. 20&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Register Patient </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_medicine">
+        <property name="minimumSize">
+         <size>
+          <width>571</width>
+          <height>401</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(76, 77, 78) ; 
 font: 700 30pt &quot;HoloLens MDL2 Assets&quot;;
 color:rgb(255, 255, 255);
 </string>
-                </property>
-                <property name="text">
-                 <string>     Register Patient</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_medicine">
-                <property name="minimumSize">
-                 <size>
-                  <width>571</width>
-                  <height>401</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:rgb(76, 77, 78) ; 
-font: 700 30pt &quot;HoloLens MDL2 Assets&quot;;
-color:rgb(255, 255, 255);
-</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <widget class="QFrame" name="frame_2">
-              <property name="minimumSize">
-               <size>
-                <width>71</width>
-                <height>701</height>
-               </size>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-             </widget>
-            </item>
-           </layout>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="minimumSize">
+             <size>
+              <width>231</width>
+              <height>51</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Name </string>
+            </property>
+           </widget>
           </item>
-          <item>
-           <layout class="QGridLayout" name="gridLayout_2">
-            <item row="1" column="0">
-             <layout class="QGridLayout" name="gridLayout">
-              <item row="0" column="1" rowspan="2">
-               <widget class="QLineEdit" name="linename">
-                <property name="minimumSize">
-                 <size>
-                  <width>421</width>
-                  <height>41</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:rgb(255, 255, 255)</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="1">
-               <widget class="QLineEdit" name="linephone">
-                <property name="minimumSize">
-                 <size>
-                  <width>421</width>
-                  <height>41</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:rgb(255, 255, 255)</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="0">
-               <widget class="QLabel" name="label_20">
-                <property name="minimumSize">
-                 <size>
-                  <width>231</width>
-                  <height>51</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
-                </property>
-                <property name="text">
-                 <string>Phone Number</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="0">
-               <widget class="QLabel" name="label_19">
-                <property name="minimumSize">
-                 <size>
-                  <width>231</width>
-                  <height>51</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
-                </property>
-                <property name="text">
-                 <string>CNIC</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="1">
-               <widget class="QLineEdit" name="linecnic">
-                <property name="minimumSize">
-                 <size>
-                  <width>421</width>
-                  <height>41</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:rgb(255, 255, 255)</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0">
-               <widget class="QLabel" name="label_3">
-                <property name="minimumSize">
-                 <size>
-                  <width>231</width>
-                  <height>51</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
-                </property>
-                <property name="text">
-                 <string>Name </string>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="1">
-               <widget class="QLineEdit" name="linemedical">
-                <property name="minimumSize">
-                 <size>
-                  <width>421</width>
-                  <height>41</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:rgb(255, 255, 255)</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="0">
-               <widget class="QLabel" name="label_18">
-                <property name="minimumSize">
-                 <size>
-                  <width>231</width>
-                  <height>51</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
-                </property>
-                <property name="text">
-                 <string>Gender</string>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="0">
-               <widget class="QLabel" name="label_21">
-                <property name="minimumSize">
-                 <size>
-                  <width>231</width>
-                  <height>51</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
-                </property>
-                <property name="text">
-                 <string>Medical Problem</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0" rowspan="2">
-               <widget class="QLabel" name="label_9">
-                <property name="minimumSize">
-                 <size>
-                  <width>231</width>
-                  <height>51</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
-                </property>
-                <property name="text">
-                 <string>Age</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="QLineEdit" name="lineage">
-                <property name="minimumSize">
-                 <size>
-                  <width>421</width>
-                  <height>41</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:rgb(255, 255, 255)</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="1">
-               <widget class="QLineEdit" name="linegender">
-                <property name="minimumSize">
-                 <size>
-                  <width>421</width>
-                  <height>41</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:rgb(255, 255, 255)</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="0" column="0">
-             <widget class="QFrame" name="frame">
-              <property name="minimumSize">
-               <size>
-                <width>671</width>
-                <height>311</height>
-               </size>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-             </widget>
-            </item>
-           </layout>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="linename">
+            <property name="minimumSize">
+             <size>
+              <width>421</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 255, 255)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="minimumSize">
+             <size>
+              <width>231</width>
+              <height>51</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineage">
+            <property name="minimumSize">
+             <size>
+              <width>421</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 255, 255)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_18">
+            <property name="minimumSize">
+             <size>
+              <width>231</width>
+              <height>51</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Gender</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="linegender">
+            <property name="minimumSize">
+             <size>
+              <width>421</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 255, 255)</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_19">
+            <property name="minimumSize">
+             <size>
+              <width>231</width>
+              <height>51</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
+            </property>
+            <property name="text">
+             <string>CNIC</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="linecnic">
+            <property name="minimumSize">
+             <size>
+              <width>421</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 255, 255)</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_20">
+            <property name="minimumSize">
+             <size>
+              <width>231</width>
+              <height>51</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Phone Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="linephone">
+            <property name="minimumSize">
+             <size>
+              <width>421</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 255, 255)</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_21">
+            <property name="minimumSize">
+             <size>
+              <width>231</width>
+              <height>51</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 25pt &quot;Modern No. 20&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Medical Problem</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="linemedical">
+            <property name="minimumSize">
+             <size>
+              <width>421</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 255, 255)</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
-        <item>
-         <widget class="QFrame" name="frame_4">
-          <property name="minimumSize">
-           <size>
-            <width>661</width>
-            <height>61</height>
-           </size>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
-          </property>
-         </widget>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="minimumSize">
+             <size>
+              <width>341</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>CANCEL</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QFrame" name="frame">
+            <property name="minimumSize">
+             <size>
+              <width>20</width>
+              <height>51</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="minimumSize">
+             <size>
+              <width>331</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>SUBMIT</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
-      </item>
-      <item>
-       <widget class="QFrame" name="frame_5">
-        <property name="minimumSize">
-         <size>
-          <width>1361</width>
-          <height>80</height>
-         </size>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="QFrame" name="frame_6">
-      <property name="minimumSize">
-       <size>
-        <width>120</width>
-        <height>871</height>
-       </size>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>710</x>
-     <y>690</y>
-     <width>708</width>
-     <height>65</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_4">
-    <item>
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="minimumSize">
-       <size>
-        <width>341</width>
-        <height>61</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>CANCEL</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
-      <item>
-       <widget class="QFrame" name="frame_3">
-        <property name="minimumSize">
-         <size>
-          <width>20</width>
-          <height>51</height>
-         </size>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="minimumSize">
-         <size>
-          <width>331</width>
-          <height>61</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>SUBMIT</string>
-        </property>
-       </widget>
       </item>
      </layout>
     </item>

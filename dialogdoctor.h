@@ -23,6 +23,8 @@ private slots:
 
     void on_doctor_label_linkActivated(const QString &link);
 
+    void on_DialogDoctor_accepted();
+
 private:
     Ui::DialogDoctor *ui;
 };

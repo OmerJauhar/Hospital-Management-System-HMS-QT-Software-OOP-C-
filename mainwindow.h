@@ -36,6 +36,8 @@ private slots:
 
     void on_frame_5_customContextMenuRequested(const QPoint &pos);
 
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
